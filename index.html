@@ -10,26 +10,54 @@
             <input type="submit" value="S'inscrire"><!--Inscription-->
             <nav id="category"><!--Catégorie de recherche-->
                 <ul>
-                    <li>Hébergements</li>
-                    <li>Activités</li>
+                    <li><a href="#hebergements">Hébergements</a></li>
+                    <li><a href="#activites">Activités</a></li>
                 </ul>
             </nav>
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1><!--Titre-->
             <p>En plein centre ville ou en pleine nature</p>
-            <input class="search" type="search" value="Marseille" /><!---Zone de recherche-->
-            <nav id="Filtres"><!--Filtres de recherche-->
-                <h1>Filtres</h1>
+            <form action="Search">
+                <input class="search" type="search" placeholder="Marseille" /><!---Zone de recherche-->
+                <button>Rechercher</button>
+                <h2>Filtres</h1>
                 <ul>
-                    <li>Economique</li>
-                    <li>Familial</li>
-                    <li>Romantique</li>
-                    <li>Animaux autorisés</li>
+                    <li><input type="button" value="Economique"></li>
+                    <li><input type="button" value="Familial"></li>
+                    <li><input type="button" value="Romantique"></li>
+                    <li><input type="button" value="Animaux autorisés"></li>
                 </ul>
-                <p>Plus de 500 logements sont disponibles dans cette ville</p><!--Nombre de résultats pour cette recherche-->
-            </nav>
+                <p>Plus de 500 logements sont 
+            disponibles dans cette ville</p><!--Nombre de résultats pour cette recherche-->
+            </form>
         </header><!--Ici se termine le header-->
-        <section><!--Ici commence la première section-->
-        </section><!--Ici se termine la première section-->
+        <main>
+            <section><!--Ici commence la première section-->
+                <h3>Les plus populaires</h3>
+                <article></article>
+                <article></article>
+                <article></article>
+            </section><!--Ici se termine la première section-->
+            <section id="hebergements"><!--Ici commence la deuxième section-->
+                <h3>Hébergements à Marseille</h3>
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
+            </section><!--Ici se termine la deuxième section-->
+            <section id="activites"><!--Ici commence la troisième section-->
+                <ul>
+                    <h3>Activités à Marseille</h1>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </section><!--Ici se termine la troisième section-->
+        </main>
         <footer><!--Ici commence le footer-->
         </footer><!--Ici se termine le footer-->
     </body>
