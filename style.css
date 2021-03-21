@@ -1,2 +1,6 @@
 /* style.css---------------
 Par Alexandre TREMOUREUX-*/
+@font-face {
+    font-family: 'raleway';
+    src: url('raleway/');
+}
