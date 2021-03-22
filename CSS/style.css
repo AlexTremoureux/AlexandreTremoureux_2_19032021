@@ -2,7 +2,7 @@
 Par Alexandre TREMOUREUX-*/
 @font-face {
     font-family: 'raleway';
-    src: url('raleway/');
+    src: url('/raleway/');
 }
 :root {
     --bleu: #0065FC;
