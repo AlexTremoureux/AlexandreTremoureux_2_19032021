@@ -4,6 +4,11 @@ Par Alexandre TREMOUREUX-*/
     font-family: 'raleway';
     src: url('raleway/');
 }
+:root {
+    --bleu: #0065FC;
+    --bleuClair: #DEEBFF;
+    --gris: #F2F2F2;
+}
 * {
     font-family: 'raleway';
 }
