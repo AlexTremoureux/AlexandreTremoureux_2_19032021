@@ -12,3 +12,59 @@ Par Alexandre TREMOUREUX-*/
 * {
     font-family: 'raleway';
 }
+ul{
+    list-style-type: none;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.inscription{
+    border: none;
+    font-weight: bold;
+    color: var(--bleu);
+}
+.category{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.hebergements{
+    width: 50%;
+}
+.activites{
+    width: 50%;
+}
+button{
+    display: flex;
+    border-style: solid;
+    padding-left: 0px;
+    border-radius: 20px;
+}
+
+.icon{
+    background-color: var(--bleuClair);
+    color: var(--bleu);
+    width: 20px;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+.iconR{
+    border: solid 1px var(--gris);
+    color: var(--bleu);
+    border-radius: 20px;
+    width: 15px;
+    padding: 5px;
+    text-align: center;
+}
+.titleFilter{
+    font-weight: bold;
+    margin: auto;
+    padding-right: 10px;
+
+}
+.result{
+    display: flex;
+    align-items: center;
+}
