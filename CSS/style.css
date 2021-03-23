@@ -18,9 +18,12 @@ ul{
 .top{
     display: flex;
     justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .inscription{
     border: none;
+    background-color: white;
     font-weight: bold;
     color: var(--bleu);
 }
@@ -28,18 +31,78 @@ ul{
     display: flex;
     flex-direction: row;
     width: 100%;
+    padding-left: 0px;
+}
+.category li a{
+    
 }
 .hebergements{
     width: 50%;
+    border-bottom: solid var(--bleu);
+    text-align: center;
+    padding-bottom: 10px;
+}
+.hebergements a{
+    color: var(--bleu);
+    text-decoration: none;
 }
 .activites{
     width: 50%;
+    border-bottom: solid var(--gris);
+    text-align: center;
+    padding-bottom: 10px;
+}
+.activites a{
+    color:grey;
+    text-decoration: none;
+}
+.headerTitle{
+    padding-left: 20px;
+}
+.search{
+    padding-left: 20px;
+}
+input{
+    padding-left: 20px;
+    font-weight: bold;
+    border: none;
+}
+.iconMap{
+    background-color: var(--gris);
+    color: black;
+    width: 20px;
+    border-radius: 10px 0px 0px 10px;
+    padding: 10px;
+    text-align: center;
+}
+.iconSearch{
+    background-color: var(--bleu);
+    color: white;
+    width: 20px;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+.filter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 400px;
+    padding-left: 0px;
 }
 button{
-    display: flex;
+    
     border-style: solid;
+    background-color: white;
     padding-left: 0px;
     border-radius: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    
+}
+button:hover{
+    color: var(--bleu);
+    background-color: var(--bleuClair);
 }
 
 .icon{
@@ -50,13 +113,14 @@ button{
     margin-right: 10px;
     border-radius: 20px;
 }
-.iconR{
+.iconResult{
     border: solid 1px var(--gris);
     color: var(--bleu);
     border-radius: 20px;
     width: 15px;
     padding: 5px;
     text-align: center;
+    margin-right: 10px;
 }
 .titleFilter{
     font-weight: bold;
@@ -66,5 +130,5 @@ button{
 }
 .result{
     display: flex;
-    align-items: center;
+    align-items: center;  
 }
