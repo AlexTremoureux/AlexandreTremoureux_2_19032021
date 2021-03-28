@@ -191,11 +191,23 @@ input {
     margin: 0px;
     padding-left: 15px;
     text-align: left;
+    
+}
+/*---------Notation étoiles-------*/
+.rating {
+    font-size: 12px;
+}
+.blue {
+    color: var(--bleu);   
+}
+.grey {
+    color: var(--gris);
 }
 /*-------Section Popular-------*/
 .sectionPopular {
+    max-width: 100%;
     margin: 20px 0px;
-    padding: 0px 20px;
+    padding: 0px 20px 20px;
 }
 .titleSectionPopular {
     display: flex;
@@ -203,36 +215,155 @@ input {
     padding: 20px 0px 15px;
 }
 .articlePopular {
-    max-width: 100%;
-    height: 145px;
-    margin: 10px 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background-color: white;
+    max-width: 335px;
+    border: solid 1px rgb(230, 230, 230);
+    box-shadow: 5px 5px 5px rgb(230, 230, 230);
 }
 .linkPopular {
+    max-width: 335px;
     height: 145px;
-    display: block;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: white;
-    justify-content: center;
+    
+    margin-right: 40px;
     padding-left: 5px;
+    padding-top: 5px;
     border-radius: 20px;
 }
 .linkPopular img {
     width: 135px;
     height: 135px;
+    border-radius: 20px 0px 0px 20px;
     margin-right: 20px;
     object-fit: cover;
+    
 }
 .linkPopular h4 {
-    margin: 0px;
-    padding-right: 0px;
-    height: 20px;
     
+    max-width: 145px;
+    margin: 15px 0px 10px;
 }
 .linkPopular p {
     margin: 0px;
+    
 }
 .linkPopular div {
+    padding-top: 26px;
+    margin-bottom: 15px;
+}
+/*------Section Lodging--------*/
+.sectionLodging {
+    max-width: 100%;
+    background-color: white;
+    margin: 20px 0px;
+    padding: 0px 20px 20px;
+}
+.articleLodging {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background-color: white;
+    max-width: 335px;
+    border: solid 1px rgb(230, 230, 230);
+    box-shadow: 1px 5px var(--gris);
+}
+.linkLodging {
+    max-width: 335px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    border-radius: 20px;
+}
+.linkLodging img {
+    width: 325px;
+    height: 115px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+    
+}
+.linkLodging h4 {
+    
+    max-width: 100%;
+    margin: 10px;
+}
+.linkLodging p {
+    margin: 0px 10px;
+    
+}
+.linkLodging div {
+    margin: 10px;
+}
+.more {
+    font-weight: bold;
+    display: block;
+    padding: 20px 0px;
+    width: max-content;
+}
+/*-------Section Activity-------*/
+.sectionActivity {
+    max-width: 100%;
+    background-color: white;
+    margin: 20px 0px;
+    padding: 0px 20px 25px;
+}
+.articleActivity {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background-color: white;
+    max-width: 335px;
+    border: solid 1px rgb(230, 230, 230);
+    box-shadow: 1px 5px var(--gris);
+}
+.linkActivity {
+    max-width: 335px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+.linkActivity img {
+    width: 335px;
+    height: 135px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+
+}
+.linkActivity h4 {
+    max-width: 100%;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    font-size: 1em;
     margin: 0px;
+}
+/*----------Footer----------*/
+.mainFooter {
+    padding: 45px 30px;
+    display: flex;
+    flex-direction: column;
+}
+.mainFooter ul {
+    padding-left: 0px;
+}
+.mainFooter ul li {
+    margin-bottom: 10px
+}
+.sectionAbout {
+    margin-bottom:;
+}
+.sectionOurLodging {
+    margin-bottom: ;
+
+}
+.sectionHelp {
+
 }
