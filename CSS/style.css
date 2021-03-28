@@ -33,6 +33,7 @@ img {
 h3 {
     font-size: 1.2em;
     font-weight: bold;
+    margin: 0px;
 }
 /*-----Header----Top------*/
 .mainHeader{
@@ -144,11 +145,10 @@ input {
     padding: 0px;
 }
 .buttonGroup {
-    display: block;
     display: flex;
     align-items: center;
     height: 50px;
-    border: solid rgb(217, 217, 217);
+    border: solid 2px rgb(217, 217, 217);
     border-radius: 25px;
     padding: 0px;
     margin: 0px 15px 15px 0px;
@@ -165,7 +165,74 @@ input {
     right: 4px;
 }
 .titleFilter {
-    margin: 0px;
     padding-right: 15px;
     padding-left: 10px;
+}
+.buttonGroup :hover {
+    background-color: var(--bleuClair);
+    border: solid var(--bleuClair);
+}
+
+/*----------Resultats de recherche-------------*/
+.result {
+    display: flex;
+    text-align: center;
+}
+.result i {
+    display: block;
+    width: 30px;
+    height: 25px;
+    
+    padding-top: 3px;
+    border: solid thin rgb(217, 217, 217);
+    border-radius: 20px;
+}
+.result p {
+    margin: 0px;
+    padding-left: 15px;
+    text-align: left;
+}
+/*-------Section Popular-------*/
+.sectionPopular {
+    margin: 20px 0px;
+    padding: 0px 20px;
+}
+.titleSectionPopular {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px 15px;
+}
+.articlePopular {
+    max-width: 100%;
+    height: 145px;
+    margin: 10px 0px;
+}
+.linkPopular {
+    height: 145px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+    justify-content: center;
+    padding-left: 5px;
+    border-radius: 20px;
+}
+.linkPopular img {
+    width: 135px;
+    height: 135px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+.linkPopular h4 {
+    margin: 0px;
+    padding-right: 0px;
+    height: 20px;
+    
+}
+.linkPopular p {
+    margin: 0px;
+}
+.linkPopular div {
+    margin: 0px;
 }
