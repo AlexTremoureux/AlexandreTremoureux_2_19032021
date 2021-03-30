@@ -9,6 +9,9 @@ Par Alexandre TREMOUREUX-*/
 }
 * {
     box-sizing: inherit;
+    margin: 0px;
+    padding: 0px;
+    border: none;
 }
 ul {
     list-style: none;
@@ -21,40 +24,47 @@ body {
     font-family: 'Raleway', sans-serif;
     color: rgb(20, 20, 20);
     font-size: 1rem;
-
+    width: 100%;
 }
 img {
     max-width: 100%;
     height: auto;
 }
-.sectionPopular, .mainFooter{
-    background-color: var(--gris);
-}
 h3 {
     font-size: 1.2em;
     font-weight: bold;
-    margin: 0px;
+    margin: 40px 0px 20px;
 }
-/*-----Header----Top------*/
-.mainHeader{
-    display: block;
+article {
+    margin: 10px 0px;
 }
+.sectionPopular, .mainFooter{
+    background-color: var(--gris);
+}
+
+.margVertical {
+    margin: 10px 0px;
+}
+.blue {
+    color: var(--bleu);   
+}
+.grey {
+    color: var(--gris);
+}
+.top, .search, .headerTitle, .popularContent, .footerContent, .sectionLodging, .sectionActivity{
+    width: 90%;
+    margin: auto;
+    padding: 20px 0px;
+}
+/*-----Header------*/
+
 .top {
     display: flex;
-    width: 100%;
     justify-content: space-between;
-    font-size: 1.2em;
-    padding: 0px 20px;
 }
-.suscribe {
-    background-color: white;
-    border: none;
-    color: var(--bleu);
-    padding: 0px;
-    height: 100px;
-    width: 100px;
+.subscribe a {
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 /*----Header---Category----*/
 .category {
@@ -62,45 +72,25 @@ h3 {
     text-align: center;
     width: 100%;
     height: 30px;
+    margin-bottom: 20px;
+}
+.lodging , .activity {
+    width: 50%;
+}
+.lodging a ,.activity a {
+    display: block;
     border-bottom: solid var(--gris);
-    padding-left: 0px;
-    margin: 0px;
-}
-.lodging {
-    width: 50%;
-    
-}
-.lodging a {
-    display: block;
-}
-.activity {
-    width: 50%;
-}
-.activity a {
-    display: block;
-}
-.lodging :hover , .activity :hover {
-    color: var(--bleu);
-    border-bottom: solid var(--bleu);
     padding-bottom: 10px;
 }
-/*---------HeaderTitle---------*/
-.headerTitle, .search {
-    padding: 0px 20px;
+.lodging > a:hover , .activity > a:hover {
+    color: var(--bleu);
+    border-bottom: solid var(--bleu);
 }
-.headerTitle h2 {
-    padding: 40px 0px 15px;
-    margin: 0px;
-}
-.headerTitle p {
-    margin: 0px 0px 30px;
-}
+
 /*----------Search-------------*/
 .searchBar {
-    display: block;
     display: flex;
     justify-content: center;
-    width: auto;
     height: 50px;
 }
 .iconMap {
@@ -135,14 +125,10 @@ input {
     right: 6px;
 }
 /*--------Filtres de recherche----------*/
-.search h3 {
-    margin: 40px 0px 15px;
-}
+
 .filter {
     display: flex;
     flex-wrap: wrap;
-    margin: 0px;
-    padding: 0px;
 }
 .buttonGroup {
     position: relative;
@@ -151,7 +137,6 @@ input {
     height: 50px;
     border: solid 2px rgb(217, 217, 217);
     border-radius: 25px;
-    padding: 0px;
     margin: 0px 15px 15px 0px;
 }
 .icon {
@@ -161,7 +146,6 @@ input {
     background-color: var(--bleuClair);
     border-radius: 25px;
     padding: 15px;
-    color: var(--bleu);
     font-size: 1.2em;
     left: -2px;
 }
@@ -172,52 +156,34 @@ input {
 .buttonGroup:hover {
     background-color: var(--bleuClair);
     border: solid 2px var(--bleuClair);
+    color: var(--bleu);
 }
 
 /*----------Resultats de recherche-------------*/
 .result {
     display: flex;
-    text-align: center;
 }
 .result i {
-    display: block;
-    width: 30px;
-    height: 25px;
-    
-    padding-top: 3px;
+    min-width: 20px;
+    max-height: 20px;
+    text-align: center;
     border: solid thin rgb(217, 217, 217);
     border-radius: 20px;
 }
 .result p {
-    margin: 0px;
     padding-left: 15px;
-    text-align: left;
-    
 }
 /*---------Notation étoiles-------*/
 .rating {
     font-size: 12px;
 }
-.blue {
-    color: var(--bleu);   
-}
-.grey {
-    color: var(--gris);
-}
 /*-------Section Popular-------*/
-.sectionPopular {
-    max-width: 100%;
-    margin: 20px 0px;
-    padding: 0px 20px 20px;
-}
+
 .titleSectionPopular {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0px 15px;
 }
 .articlePopular {
-    margin-top: 10px;
-    margin-bottom: 10px;
     border-radius: 24px;
     background-color: white;
     max-width: 335px;
@@ -230,7 +196,6 @@ input {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-right: 40px;
     padding-left: 5px;
     padding-top: 5px;
 }
@@ -240,31 +205,18 @@ input {
     border-radius: 20px 0px 0px 20px;
     margin-right: 20px;
     object-fit: cover;
-    
 }
 .linkPopular h4 {
     
     max-width: 145px;
     margin: 15px 0px 10px;
 }
-.linkPopular p {
-    margin: 0px;
-    
-}
 .linkPopular div {
     padding-top: 26px;
     margin-bottom: 15px;
 }
 /*------Section Lodging--------*/
-.sectionLodging {
-    max-width: 100%;
-    background-color: white;
-    margin: 20px 0px;
-    padding: 0px 20px 20px;
-}
 .articleLodging {
-    margin-top: 10px;
-    margin-bottom: 10px;
     border-radius: 24px;
     background-color: white;
     max-width: 335px;
@@ -286,16 +238,13 @@ input {
     height: 115px;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
-    
 }
 .linkLodging h4 {
-    
     max-width: 100%;
     margin: 10px;
 }
 .linkLodging p {
     margin: 0px 10px;
-    
 }
 .linkLodging div {
     margin: 10px;
@@ -307,15 +256,7 @@ input {
     width: max-content;
 }
 /*-------Section Activity-------*/
-.sectionActivity {
-    max-width: 100%;
-    background-color: white;
-    margin: 20px 0px;
-    padding: 0px 20px 25px;
-}
 .articleActivity {
-    margin-top: 10px;
-    margin-bottom: 10px;
     border-radius: 24px;
     background-color: white;
     max-width: 335px;
@@ -334,7 +275,6 @@ input {
     height: 135px;
     border-radius: 24px 24px 0px 0px;
     object-fit: cover;
-
 }
 .linkActivity h4 {
     max-width: 100%;
@@ -345,14 +285,10 @@ input {
     margin: 0px;
 }
 /*----------Footer----------*/
-.mainFooter {
-    padding: 45px 30px;
+.footerContent {
     display: flex;
     flex-direction: column;
 }
-.mainFooter ul {
-    padding-left: 0px;
-}
-.mainFooter ul li {
-    margin-bottom: 10px
+.footerContent h4, ul, li {
+    margin: 10px 0px;
 }
