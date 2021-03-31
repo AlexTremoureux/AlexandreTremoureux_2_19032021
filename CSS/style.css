@@ -63,6 +63,7 @@ article {
 }
 .subscribe {
     font-weight: bold;
+    background-color: white;
     cursor: pointer;
 }
 /*----Header---Category----*/
@@ -278,4 +279,104 @@ input {
 .footerContent h4 {
     font-size: 1.2em;
     margin: 25px 0px;
+}
+/*---------media-queries-----------*/
+@media (min-width: 768px) {
+    body{
+        max-width: 1024px;
+    }
+}
+@media (min-width: 1024px) {
+    body{
+        max-width: 1480px;
+    }
+    .category{
+        width: 30%;
+        position: absolute;
+        top: 0px;
+        right: 150px;
+    }
+    .lodging a ,.activity a {
+        display: block;
+        border-top: solid var(--gris);
+        border-bottom: none;
+        padding-top: 35px;
+    }
+    .lodging a:hover, .activity a:hover {
+        color: var(--bleu);
+        border-top: solid var(--bleu);
+        border-bottom: none;
+    }
+    .headerTitle{
+        padding-bottom: 0px;
+    }
+    .search{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .filterContent {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    .filterMainTitle{
+        margin-right: 40px;
+    }
+    input {
+        width: 60%;
+    }
+    .mainContent{
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 90%;
+        padding: 20px 0px;
+        margin: auto;
+    }
+    .popularWrapper{
+        width: 30%;
+    }
+    
+    .sectionPopular{
+        padding: 20px;
+        border-radius: 15px;
+    }
+    .popularContent{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .sectionLodging{
+        width: 69%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: var(--gris);
+        border-radius: 15px;
+        padding: 20px;
+        margin: 0px 10px 0px 0px;
+        
+    }
+    .articleWrapper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .articleLodging{
+        width: 32%;
+        margin: 5px;
+    }
+    .more{
+        padding: 10px 0px 0px 10px;
+}
+@media (min-width: 1480px) {
+    body{
+        max-width: 1480px;
+    }
+
 }
