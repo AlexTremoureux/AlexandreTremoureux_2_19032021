@@ -205,7 +205,7 @@ input {
     height: 135px;
     border-radius: 18px 0px 0px 18px;
     object-fit: cover;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 .linkPopular h4, .linkPopular p {
     margin-top: 5px;
@@ -285,47 +285,79 @@ input {
     body{
         max-width: 1024px;
     }
+    .headerTitle, .search{
+        text-align: center;
+    }
+    input{
+        width: 50%;
+    }
+    .filter, .result{
+        justify-content: center;
+    }
     .mainContent{
         display: flex;
-        flex-direction: row-reverse;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        flex-direction: column;
+        justify-content: space-between;
         width: 90%;
-        padding: 20px 0px;
+        height: 100%;
+        padding: 20px 0pxs;
         margin: auto;
     }
     .popularWrapper{
-        width: 38%;
+        width: 100%;
     }
     
     .sectionPopular{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
         padding: 20px;
         border-radius: 15px;
+        margin-bottom: 30px;
+    }
+    .titleSectionPopular{
+        display: block;
+        width: 100%;
+        margin: 10px 0px 0px;
     }
     .popularContent{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
         width: 100%;
+        height: 250px;
         margin: 0px;
         padding: 0px;
+        text-align: center;
+    }
+    .articlePopular{
+        width: 30%;
+        height: max-content;
     }
     .sectionLodging{
-        max-width: 60%;
+        width: 100%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         background-color: var(--gris);
         border-radius: 15px;
         padding: 20px;
-        margin: 0px 10px 0px 0px;
+        justify-content: center;
+        text-align: center;
+    }
+    .sectionLodging h3{
+        margin: 0px 0px 30px;
     }
     .articleWrapper{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
-        min-width: 45%;
+        min-width: 35%;
     }
     .articleLodging{
-        width: 45%;
+        width: 25%;
         margin: 5px;
     }
     .more{
@@ -335,6 +367,7 @@ input {
         width: 100%;
         padding: 0px;
         margin: 0px;
+        text-align: center;
     }
     .activityWrapper{
         width: 100%;
@@ -344,11 +377,15 @@ input {
         height: 550px;
     }
     .articleActivity{
-        width: 25%;
+        width: 22.8%;
         max-height: 420px;
+        margin-right: 20px;
+    }
+    .linkActivity h4{
+        padding-top: 10px;
     }
     .big{
-        width: 23%;
+        
         min-height: 420px;
     }
     .bigLink{
@@ -362,12 +399,19 @@ input {
         height: 350px;
         width: 100%;
     }
+    .footerContent{
+        text-align: center;
+    }
 }
-/*@media (min-width: 1024px) {
-    body{
+@media (min-width: 1024px) {
+    body { 
         max-width: 1480px;
     }
-    .category{
+    h3 {
+        font-size: 1.2em;
+        margin: 20px 0px 0px;
+    }
+    .category {
         width: 30%;
         position: absolute;
         top: 0px;
@@ -384,13 +428,15 @@ input {
         border-top: solid var(--bleu);
         border-bottom: none;
     }
-    .headerTitle{
+    .headerTitle {
+        text-align: left;
         padding-bottom: 0px;
     }
-    .search{
+    .search {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
     .filterContent {
         display: flex;
@@ -398,13 +444,13 @@ input {
         flex-wrap: wrap;
         margin-top: 20px;
     }
-    .filterMainTitle{
+    .filterMainTitle {
         margin-right: 40px;
     }
     input {
-        width: 60%;
+        width: 80%;
     }
-    .mainContent{
+    .mainContent {
         display: flex;
         flex-direction: row-reverse;
         flex-wrap: wrap;
@@ -413,81 +459,96 @@ input {
         padding: 20px 0px;
         margin: auto;
     }
-    .popularWrapper{
+    .popularWrapper {
         width: 30%;
+        height: min-content;
     }
-    
-    .sectionPopular{
+    .titleSectionPopular {
+        display: flex;
+        height: min-content;
+    }
+    .sectionPopular {
         padding: 20px;
         border-radius: 15px;
     }
-    .popularContent{
+    .popularContent {
+        flex-direction: column;
         width: 100%;
+        height: 580px;
         margin: 0px;
         padding: 0px;
+        text-align: left;
     }
-    .sectionLodging{
+    .articlePopular {
+        width: 100%;
+    }
+    .sectionLodging {
         max-width: 68%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        text-align: left;
+        justify-content: left;
+        height: 620px;
         background-color: var(--gris);
         border-radius: 15px;
         padding: 20px;
         margin: 0px 10px 0px 0px;
     }
-    .articleWrapper{
+    .articleWrapper {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
         min-width: 30%;
     }
-    .articleLodging{
+    .articleLodging {
         width: 30%;
         margin: 5px;
     }
-    .more{
+    .more {
         padding: 10px 0px 0px 10px;
     }
-    .sectionActivity{
+    .sectionActivity {
         width: 100%;
         padding: 0px;
         margin: 0px;
+        text-align: left;
     }
-    .activityWrapper{
+    .activityWrapper {
         width: 100%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        height: 550px;
+        height: 480px;
+        text-align: left;
     }
-    .articleActivity{
+    .articleActivity {
         width: 25%;
         max-height: 420px;
     }
-    .big{
+    .big {
         width: 23%;
         min-height: 420px;
     }
-    .bigLink{
+    .bigLink {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         width: 100%;
         height: 420px;
     }
-    .bigImage{
+    .bigImage {
         height: 350px;
         width: 100%;
     }
-    .footerContent{
+    .footerContent {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding-bottom: 40px;
     }
-    .sectionHelp{
+    .sectionHelp {
         margin-right: 200px;
     }
 }
