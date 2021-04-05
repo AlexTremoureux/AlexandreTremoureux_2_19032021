@@ -19,6 +19,9 @@ a {
     text-decoration: none;
     color: rgb(20, 20, 20);
 }
+span {
+    font-weight: bold;
+}
 body {
     font-family: 'Raleway', sans-serif;
     color: rgb(20, 20, 20);
@@ -96,11 +99,14 @@ article {
 .iconMap {
     display: block;
     text-align: center;
+    position: relative;
     padding-top: 15px;
     background-color: var(--gris);
-    border-radius: 10px 0px 0px 10px;
-    height: 50px;
-    min-width: 50px;
+    border-radius: 20px 0px 0px 20px;
+    height: 52px;
+    bottom: 1px;
+    left: 1px;
+    min-width: 55px;
     font-size: 1.2em;
 }
 input {
@@ -122,7 +128,9 @@ input {
     font-size: 1.2rem;
     border-radius: 15px;
     position: relative;
-    right: 12px;
+    right: 20px;
+    bottom: 1px;
+    cursor: pointer;
 }
 /*--------Filtres de recherche----------*/
 .filter {
@@ -139,19 +147,23 @@ input {
     border-radius: 25px;
     margin: 0px 15px 15px 0px;
 }
-.icon {
+.iconWrapperFilter {
     position: absolute;
+    display: flex;
+    justify-content: center;
     height: 55px;
     width: 55px;
     background-color: var(--bleuClair);
-    border-radius: 25px;
-    padding: 15px;
+    border-radius: 50%;
     font-size: 1.4em;
-    left: -2px;
+    left: -5px;
+}
+.icon{
+    align-self: center;
 }
 .titleFilter {
     padding-right: 15px;
-    padding-left: 65px;
+    padding-left: 60px;
     font-size: 1.1em;
     font-weight: bold;
 }
@@ -159,6 +171,12 @@ input {
     background-color: var(--bleuClair);
     border: solid 2px var(--bleuClair);
     color: var(--bleu);
+    transition: 0.4s;
+}
+.buttonGroup:hover .iconWrapperFilter, .buttonGroup:hover i{
+    background-color: var(--bleu);
+    color: var(--bleuClair);
+    transition: 0.4s;
 }
 /*----------Resultats de recherche-------------*/
 .result {
@@ -190,32 +208,45 @@ input {
     justify-content: space-between;
     padding-bottom: 10px;
 }
+.iconPopular{
+    cursor: pointer;
+    font-size: 1em;
+    margin-left: 20px;
+}
 .articlePopular {
     max-width: 100%;
+    min-height: 145px;
     border-radius: 22px;
     box-shadow: 0px 0px 8px 2px rgb(230, 230, 230);
     background-color: rgb(255, 255, 255);
 }
 .linkPopular {
     max-width: 100%;
-    height: 145px;
+    min-height: 145px;
+    max-height: 160px;
     border-radius: 22px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 5px;
 }
 .linkPopular img {
     width: 40%;
-    height: 135px;
+    height: 145px;
+    max-height: 150px;
     border-radius: 18px 0px 0px 18px;
     object-fit: cover;
     margin-right: 10px;
 }
-.linkPopular h4, .linkPopular p {
-    margin-top: 5px;
+.linkPopular h4 {
+    margin-top: 10px;
+    width: 45%;
+    font-size: 1em;
+}
+.linkPopular p {
     width: 50%;
+    font-size: 1em;
 }
 .linkPopular div {
     margin-bottom: 5px;
@@ -233,6 +264,7 @@ input {
 .linkLodging {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     min-height: 210px;
     border-radius: 18px;
 }
@@ -244,6 +276,7 @@ input {
 }
 .linkLodging h4, .linkLodging p, .linkLodging div{
     margin: 5px 10px;
+    font-size: 1em;
 }
 .more {
     font-weight: bold;
@@ -259,7 +292,7 @@ input {
 .articleActivity {
     border-radius: 18px;
     background-color: white;
-    box-shadow: 0px 4px 3px 2px var(--gris);
+    box-shadow: 0px 4px 12px 4px var(--gris);
     margin: 20px 0px;
 }
 .linkActivity {
@@ -275,7 +308,7 @@ input {
 }
 .linkActivity h4 {
     padding: 20px 20px 10px 20px;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 /*----------Footer----------*/
 .footerContent {
@@ -402,7 +435,7 @@ input {
         height: 420px;
     }
     .bigImage{
-        height: 350px;
+        min-height: 365px;
         width: 100%;
     }
     .footerContent{
@@ -440,9 +473,8 @@ input {
     }
     .search {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
     }
     .filterContent {
         display: flex;
@@ -515,39 +547,6 @@ input {
     .more {
         padding: 10px 0px 0px 10px;
     }
-    .sectionActivity {
-        width: 100%;
-        padding: 0px;
-        margin: 0px;
-        text-align: left;
-    }
-    .activityWrapper {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        height: 480px;
-        text-align: left;
-    }
-    .articleActivity {
-        width: 25%;
-        max-height: 420px;
-    }
-    .big {
-        width: 23%;
-        min-height: 420px;
-    }
-    .bigLink {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100%;
-        height: 420px;
-    }
-    .bigImage {
-        height: 350px;
-        width: 100%;
-    }
     .footerContent {
         display: flex;
         flex-direction: row;
@@ -561,7 +560,9 @@ input {
 
 @media (min-width: 1480px) {
     body{
-        max-width: 1480px;
+        max-width: 100%;
     }
-
+    .category{
+        right: 200px;
+    }
 }
