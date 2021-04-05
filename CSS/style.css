@@ -64,6 +64,7 @@ article {
 .subscribe {
     font-weight: bold;
     background-color: white;
+    border: none;
     cursor: pointer;
 }
 /*----Header---Category----*/
@@ -162,17 +163,22 @@ input {
 /*----------Resultats de recherche-------------*/
 .result {
     display: flex;
-    padding-bottom: 10px;
 }
-.result i {
-    min-width: 20px;
-    max-height: 20px;
-    text-align: center;
+.iconResult{
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    border-radius: 50%;
     border: solid thin rgb(217, 217, 217);
-    border-radius: 20px;
+}
+.iconResult i{
+    align-self: center;
 }
 .result p {
     padding-left: 15px;
+    align-self: center;
 }
 /*---------Notation étoiles-------*/
 .rating {
