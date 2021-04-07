@@ -26,7 +26,7 @@
 
             <!--Catégorie de recherche-->
             <nav>
-                <ul class="category">
+            <ul class="category">
                     <li class="lodging"><a href="#sectionLodging">Hébergements</a></li>
                     <li class="activity"><a href="#sectionActivity">Activités</a></li>
                 </ul>
@@ -42,11 +42,17 @@
             <form class="search" action="Search">
                 <!--Barre de recherche-->
                 <div class="searchBar">
-                    <i class="iconMap fas fa-map-marker-alt"></i>
-                    <input type="search" placeholder="Marseille, France" />
-                    <i class="iconSearch fas fa-search"></i>
+                    <div class="wrapperIconMap">
+                        <i class="iconMap fas fa-map-marker-alt"></i>
+                    </div>
+                    <input class="iSearch" type="search" placeholder="Marseille, France" />
+                    <div class="wrapperIconSearch">
+                        <i class="iconSearch fas fa-search"></i>
+                    </div>
+                    <div class="wrapperSearchText">
+                        <span class="searchText">Rechercher</span>
+                    </div>
                 </div>
-
                 <!--Filtres de recherche-->
                 <div class="filterContent">
                     <h3 class="filterMainTitle">Filtres</h3>
@@ -127,7 +133,7 @@
                                     <i class="blue fas fa-star"></i>
                                     <i class="blue fas fa-star"></i>
                                     <i class="blue fas fa-star"></i>
-                                </div>
+                                  </div>
                             </a>
                         </article>
 
@@ -143,7 +149,7 @@
                                     <i class="blue fas fa-star"></i>
                                     <i class="blue fas fa-star"></i>
                                     <i class="grey fas fa-star"></i>
-                                </div>
+                            </div>
                             </a>
                         </article>
 
