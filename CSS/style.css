@@ -256,9 +256,6 @@ article {
     max-height: 155px;
     border-radius: 22px;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
     padding: 5px;
 }
 .linkPopular img {
@@ -267,20 +264,25 @@ article {
     max-height: 150px;
     border-radius: 18px 0px 0px 18px;
     object-fit: cover;
-    margin-right: 10px;
+    
+}
+.wrapperDescriptionPopular{
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 15px;
 }
 .linkPopular h4 {
-    margin-top: 10px;
-    width: 45%;
+    
     font-size: 1em;
 }
 .linkPopular p {
-    width: 50%;
+    
     font-size: 1em;
 }
 .linkPopular div {
-    margin-bottom: 5px;
-    width: 50%;
+    
     font-size: 0.9em;
 }
 /*------Section Lodging--------*/
