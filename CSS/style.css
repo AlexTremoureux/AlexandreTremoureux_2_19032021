@@ -424,13 +424,13 @@ article {
         text-align: center;
     }
     .sectionLodging h3{
-        margin: 0px 0px 30px;
+        margin: 10px 0px 12px;
     }
     .articleWrapper{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     .articleLodging{
         width: 30%;
@@ -451,12 +451,13 @@ article {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        height: 550px;
+        justify-content: space-between;
+        align-content: space-between;
+        height: 460px;
     }
     .articleActivity{
         width: 22.8%;
         max-height: 420px;
-        margin-right: 20px;
     }
     .linkActivity h4{
         padding-top: 10px;
@@ -492,7 +493,7 @@ article {
         width: 30%;
         position: absolute;
         top: 0px;
-        right: 150px;
+        right: 12%;
     }
     .lodging a ,.activity a {
         display: block;
@@ -533,6 +534,8 @@ article {
         flex-direction: row;
         flex-wrap: wrap;
         margin-top: 20px;
+        max-width: 100%;
+        max-width: 100%;
     }
     .filterMainTitle {
         margin-right: 40px;
@@ -590,8 +593,8 @@ article {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
-        min-width: 30%;
+        justify-content: space-between;
+        width: 100%;
     }
     .articleLodging {
         margin-bottom: 20px;
@@ -599,22 +602,21 @@ article {
     .more {
         padding: 10px 0px 0px 10px;
     }
+    .sectionActivity h3{
+        text-align: left;
+    }
     .footerContent {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding-bottom: 40px;
-    }
-    .sectionHelp {
-        margin-right: 200px;
+        padding-right: 20%;
+        text-align: left
     }
 }
 
 @media (min-width: 1480px) {
     body{
         max-width: 100%;
-    }
-    .category{
-        right: 200px;
     }
 }
