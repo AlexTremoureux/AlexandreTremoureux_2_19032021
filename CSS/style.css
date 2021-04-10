@@ -34,9 +34,9 @@ img {
     height: auto;
 }
 h3 {
-    font-size: 1.4em;
+    font-size: 1.3rem;
     font-weight: bold;
-    margin: 30px 0px 20px;
+    margin: 10px 0px 20px;
 }
 article {
     margin: 10px 0px;
@@ -66,6 +66,7 @@ article {
 }
 .subscribe {
     font-weight: bold;
+    font-size: 1.1rem;
     background-color: white;
     border: none;
     cursor: pointer;
@@ -84,6 +85,7 @@ article {
 .lodging a ,.activity a {
     display: block;
     border-bottom: solid var(--gris);
+    font-size: 1.1rem;
     padding-bottom: 10px;
 }
 .lodging a:hover, .activity a:hover {
@@ -95,6 +97,7 @@ article {
     display: flex;
     height: 50px;
     max-width: 100%;
+    margin-bottom: 20px;
 }
 .wrapperIconMap{
     display: flex;
@@ -103,7 +106,7 @@ article {
     border-radius: 20px 0px 0px 20px;
     height: 50px;
     min-width: 60px;
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 .iconMap{
    align-self: center;
@@ -117,7 +120,7 @@ article {
     border-left: none;
     border-right: none;
     padding-left: 15px;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: bold;
 }
 .iSearch::placeholder{
@@ -184,7 +187,7 @@ article {
     width: 55px;
     background-color: var(--bleuClair);
     border-radius: 50%;
-    font-size: 1.4em;
+    font-size: 1.4rem;
     left: -5px;
 }
 .icon{
@@ -193,7 +196,7 @@ article {
 .titleFilter {
     padding-right: 15px;
     padding-left: 60px;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     font-weight: bold;
 }
 .buttonGroup:hover {
@@ -235,24 +238,21 @@ article {
 .titleSectionPopular {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 10px;
+    margin: 10px 0px 10px;
 }
 .iconPopular{
     cursor: pointer;
-    font-size: 1em;
+    font-size: 1.2rem;
     margin-left: 20px;
 }
 .articlePopular {
     max-width: 100%;
-    min-height: 145px;
-    max-height: 190px;
     border-radius: 22px;
     box-shadow: 0px 0px 8px 2px rgb(230, 230, 230);
     background-color: rgb(255, 255, 255);
 }
 .linkPopular {
     max-width: 100%;
-    min-height: 145px;
     max-height: 155px;
     border-radius: 22px;
     display: flex;
@@ -264,7 +264,6 @@ article {
     max-height: 150px;
     border-radius: 18px 0px 0px 18px;
     object-fit: cover;
-    
 }
 .wrapperDescriptionPopular{
     max-width: 60%;
@@ -274,21 +273,15 @@ article {
     padding-left: 15px;
 }
 .linkPopular h4 {
-    
-    font-size: 1em;
+    font-size: 1.1rem;
 }
 .linkPopular p {
-    
-    font-size: 1em;
+    font-size: 1rem;
 }
 .linkPopular div {
-    
-    font-size: 0.9em;
+    font-size: 0.9rem;
 }
 /*------Section Lodging--------*/
-.articleLodging, .linkLodging, .linkLodging h4 {
-    max-width: 100%;
-}
 .articleLodging {
     border-radius: 18px;
     background-color: white;
@@ -297,26 +290,34 @@ article {
 .linkLodging {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 210px;
+    height: 200px;
     border-radius: 18px;
+    padding: 5px;
 }
 .linkLodging img {
-    height: 115px;
+    height: 60%;
     border-radius: 18px 18px 0px 0px;
     object-fit: cover;
 }
-.linkLodging h4, .linkLodging p{
-    margin: 5px 10px 0px;
-    font-size: 1em;
+.wrapperDescriptionLodging{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 15px;
+}
+.linkLodging h4{
+    font-size: 1.1rem;
+}
+.linkLodging p{
+    font-size: 1rem;
 }
 .linkLodging div{
-    font-size: 0.9em;
-    margin: 5px 10px;
+    font-size: 0.9rem;
 }
 .more {
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     display: block;
     padding: 20px 0px;
     width: max-content;
@@ -335,7 +336,9 @@ article {
     height: 190px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     border-radius: 18px;
+    padding-bottom: 5px;
 }
 .linkActivity img {
     height: 135px;
@@ -343,8 +346,8 @@ article {
     object-fit: cover;
 }
 .linkActivity h4 {
-    padding: 20px 20px 10px 20px;
-    font-size: 1em;
+    padding: 10px 20px;
+    font-size: 1rem;
 }
 /*----------Footer----------*/
 .footerContent {
@@ -352,7 +355,7 @@ article {
     flex-direction: column;
 }
 .footerContent h4 {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     margin: 25px 0px;
 }
 /*---------media-queries-----------*/
@@ -378,7 +381,7 @@ article {
         justify-content: space-between;
         width: 90%;
         height: 100%;
-        padding: 20px 0pxs;
+        padding: 20px 0px;
         margin: auto;
     }
     .popularWrapper{
@@ -424,7 +427,7 @@ article {
         text-align: center;
     }
     .sectionLodging h3{
-        margin: 10px 0px 12px;
+        margin: 10px 0px 20px;
     }
     .articleWrapper{
         display: flex;
@@ -452,7 +455,6 @@ article {
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
-        align-content: space-between;
         height: 460px;
     }
     .articleActivity{
@@ -460,22 +462,26 @@ article {
         max-height: 420px;
     }
     .linkActivity h4{
+        height: 60px;
         padding-top: 10px;
     }
-    .big{
-        
-        min-height: 420px;
+    .littleLink{
+        height: 160px;
+    }
+    .littleImage{
+        max-height: 100px;
+    }
+    .mediumLink{
+        height: 200px;
+    }
+    .mediumImage{
+        min-height: 140px;
     }
     .bigLink{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100%;
         height: 420px;
     }
     .bigImage{
-        min-height: 365px;
-        width: 100%;
+        min-height: 360px;
     }
     .footerContent{
         text-align: center;
@@ -486,7 +492,6 @@ article {
         max-width: 1480px;
     }
     h3 {
-        font-size: 1.2em;
         margin: 20px 0px 0px;
     }
     .category {
@@ -540,7 +545,6 @@ article {
     .filterMainTitle {
         margin-right: 40px;
     }
-    
     .mainContent {
         display: flex;
         flex-direction: row-reverse;
@@ -557,6 +561,7 @@ article {
     .titleSectionPopular {
         display: flex;
         height: min-content;
+        margin-bottom: 10px;
     }
     .sectionPopular {
         padding: 20px;
@@ -589,6 +594,9 @@ article {
     .sectionLodging h3 , .more{
         width: 50%;
     }
+    .sectionLodging h3{
+        margin: 10px  0px 0px;
+    }
     .articleWrapper {
         display: flex;
         flex-direction: row;
@@ -602,7 +610,7 @@ article {
     .more {
         padding: 10px 0px 0px 10px;
     }
-    .sectionActivity h3{
+    .sectionActivity{
         text-align: left;
     }
     .footerContent {
