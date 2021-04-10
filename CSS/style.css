@@ -247,8 +247,20 @@ article {
     min-height: 145px;
     max-height: 190px;
     border-radius: 22px;
-    box-shadow: 0px 0px 8px 2px rgb(230, 230, 230);
-    background-color: rgb(255, 255, 255);
+    border-right: solid #b9b8b8 1px;
+    border-bottom: solid #b9b8b8 1px;
+    box-shadow: 2px 2px 10px 2px #b9b8b8;
+    background-color: #ffffff;
+}
+.articlePopular:hover{
+    transition: 0.2s;
+    scale: 1.1;
+}
+.articlePopular:active{
+    border: none;
+    border-top: solid #b9b8b8 1px;
+    border-left: solid #b9b8b8 1px;
+    box-shadow: -2px -2px 10px 2px #b9b8b8;
 }
 .linkPopular {
     max-width: 100%;
@@ -275,7 +287,7 @@ article {
 }
 .linkPopular h4 {
     
-    font-size: 1em;
+    font-size: 1.1em;
 }
 .linkPopular p {
     
@@ -290,19 +302,34 @@ article {
     max-width: 100%;
 }
 .articleLodging {
+    height: 210px;
+    width: 100%;
     border-radius: 18px;
     background-color: white;
-    box-shadow: 0px 4px 3px 2px var(--gris);
+    border-right: solid #b9b8b8 1px;
+    border-bottom: solid #b9b8b8 1px;
+    box-shadow: 2px 2px 10px 2px #b9b8b8;
+    background-color: #ffffff;
+}
+.articleLodging:active{
+    border: none;
+    border-top: solid #b9b8b8 1px;
+    border-left: solid #b9b8b8 1px;
+    box-shadow: -2px -2px 10px 2px #b9b8b8;
+}
+.articleLodging:hover{
+    transition: 0.2s;
+    scale: 1.2;
 }
 .linkLodging {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 210px;
+    height: 100%;
     border-radius: 18px;
 }
 .linkLodging img {
-    height: 115px;
+    height: 60%;
     border-radius: 18px 18px 0px 0px;
     object-fit: cover;
 }
@@ -328,7 +355,7 @@ article {
 .articleActivity {
     border-radius: 18px;
     background-color: white;
-    box-shadow: 0px 4px 12px 4px var(--gris);
+    box-shadow: 0px 3px 8px 4px #b9b8b8;
     margin: 20px 0px;
 }
 .linkActivity {
@@ -355,7 +382,8 @@ article {
     font-size: 1.2em;
     margin: 25px 0px;
 }
-/*---------media-queries-----------*/
+/*-------------------------------------------------------------media-queries------------------------------------------------------------------------*/
+/*------------------------------Tablet------------------------------------*/
 @media (min-width: 768px) {
     body{
         max-width: 1024px;
@@ -381,6 +409,7 @@ article {
         padding: 20px 0pxs;
         margin: auto;
     }
+    /*------------------------------section Popular Tablet------------------------------------*/
     .popularWrapper{
         width: 100%;
     }
@@ -412,6 +441,7 @@ article {
         width: 32%;
         height: max-content;
     }
+    /*------------------------------section Lodging Tablet------------------------------------*/
     .sectionLodging{
         width: 100%;
         display: flex;
@@ -435,11 +465,12 @@ article {
     .articleLodging{
         width: 30%;
         margin: 5px;
-        box-shadow: 0px 3px 12px 6px rgb(230, 230, 230);
+        
     }
     .more{
         padding: 10px 0px 0px 10px;
     }
+    /*------------------------------section Activity Tablet------------------------------------*/
     .sectionActivity{
         width: 100%;
         padding: 0px;
@@ -476,10 +507,12 @@ article {
         min-height: 365px;
         width: 100%;
     }
+    /*------------------------------Footer Tablet------------------------------------*/
     .footerContent{
         text-align: center;
     }
 }
+/*------------------------------desktop------------------------------------*/
 @media (min-width: 1024px) {
     body { 
         max-width: 1480px;
@@ -488,11 +521,14 @@ article {
         font-size: 1.2em;
         margin: 20px 0px 0px;
     }
+    .suscribe{
+        width: 12%;
+    }
     .category {
         width: 30%;
         position: absolute;
         top: 0px;
-        right: 150px;
+        right: 12%;
     }
     .lodging a ,.activity a {
         display: block;
@@ -547,6 +583,7 @@ article {
         padding: 20px 0px;
         margin: auto;
     }
+
     .popularWrapper {
         width: 30%;
         height: min-content;
@@ -609,12 +646,10 @@ article {
         margin-right: 200px;
     }
 }
-
+/*------------------------------Desktop wide------------------------------------*/
 @media (min-width: 1480px) {
     body{
         max-width: 100%;
     }
-    .category{
-        right: 200px;
-    }
+    
 }
