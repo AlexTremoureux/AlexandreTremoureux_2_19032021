@@ -448,7 +448,7 @@ article {
     .sectionActivity{
         width: 100%;
         padding: 0px;
-        margin: 0px;
+        margin: 10px 0px;
         text-align: center;
     }
     .activityWrapper{
@@ -468,10 +468,11 @@ article {
         padding-top: 10px;
     }
     .littleLink{
-        height: 160px;
+        height: 180px;
     }
     .littleImage{
-        max-height: 100px;
+        max-height: 120px;
+        object-position: 50% 20%;
     }
     .mediumLink{
         height: 200px;
