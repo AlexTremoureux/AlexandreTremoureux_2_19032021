@@ -94,7 +94,7 @@ article {
     z-index: 10;
     
 
-    background: rgba(17, 9, 1, 0.9);
+    background: rgba(199, 199, 199, 0.9);
 }
 .modalWrapper:target {
     visibility: visible;
@@ -111,9 +111,8 @@ article {
     height: 40%;
     
     
-    background: rgba(145, 77, 4, 0.8);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    
+    background: rgba(235, 235, 235, 0.7);
+    box-shadow: 0 8px 80px 0 var(--bleu, 0.37);
     border-radius: 50px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
@@ -130,7 +129,7 @@ article {
 .modalBtn{
     display: block;
     border: solid 1px black;
-    background-color: rgb(255, 94, 0);
+    background-color: rgba(255, 94, 0, 0.9);
     border-radius: 50px;
     width: 25%;
     height: 25%;
