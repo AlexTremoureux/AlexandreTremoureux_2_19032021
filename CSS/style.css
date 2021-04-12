@@ -254,7 +254,7 @@ article {
 }
 .articlePopular:hover{
     transition: 0.2s;
-    scale: 1.1;
+    transform: scale(1.2);
 }
 .articlePopular:active{
     border: none;
@@ -319,7 +319,7 @@ article {
 }
 .articleLodging:hover{
     transition: 0.2s;
-    scale: 1.2;
+    transform: scale(1.2);
 }
 .linkLodging {
     display: flex;
