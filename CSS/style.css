@@ -26,7 +26,6 @@ body {
     font-family: 'Raleway', sans-serif;
     color: rgb(20, 20, 20);
     font-size: 1rem;
-    width: 100%;
     max-width: 768px;
 }
 img {
@@ -44,7 +43,6 @@ article {
 .sectionPopular, .mainFooter{
     background-color: var(--gris);
 }
-
 .margVertical {
     margin: 10px 0px;
 }
@@ -358,7 +356,8 @@ article {
     font-size: 1.2rem;
     margin: 25px 0px;
 }
-/*---------media-queries-----------*/
+/*------------------------------media-queries----------------------------------*/
+/*---------Tablet-----------*/
 @media (min-width: 768px) {
     body{
         max-width: 1024px;
@@ -384,6 +383,7 @@ article {
         padding: 20px 0px;
         margin: auto;
     }
+    /*---------Tablet Popular-----------*/
     .popularWrapper{
         width: 100%;
     }
@@ -415,6 +415,7 @@ article {
         width: 32%;
         height: max-content;
     }
+    /*---------Tablet Lodging-----------*/
     .sectionLodging{
         width: 100%;
         display: flex;
@@ -443,6 +444,7 @@ article {
     .more{
         padding: 10px 0px 0px 10px;
     }
+    /*---------Tablet Activity-----------*/
     .sectionActivity{
         width: 100%;
         padding: 0px;
@@ -487,6 +489,7 @@ article {
         text-align: center;
     }
 }
+/*---------Desktop-----------*/
 @media (min-width: 1024px) {
     body { 
         max-width: 1480px;
@@ -622,7 +625,7 @@ article {
         text-align: left
     }
 }
-
+/*---------Desktop Wide-----------*/
 @media (min-width: 1480px) {
     body{
         max-width: 100%;
