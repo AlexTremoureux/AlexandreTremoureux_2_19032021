@@ -63,6 +63,7 @@ article {
     justify-content: space-between;
 }
 .subscribe {
+    display: block;
     font-weight: bold;
     font-size: 1.1rem;
     background-color: white;
@@ -203,8 +204,12 @@ article {
     color: var(--bleu);
     transition: 0.4s;
 }
-.buttonGroup:hover .iconWrapperFilter, .buttonGroup:hover i{
+.buttonGroup:hover .iconWrapperFilter{
     background-color: var(--bleu);
+    color: var(--bleuClair);
+    transition: 0.4s;
+}
+.buttonGroup:hover i{
     color: var(--bleuClair);
     transition: 0.4s;
 }
@@ -281,7 +286,7 @@ article {
 }
 /*------Section Lodging--------*/
 .articleLodging {
-    border-radius: 18px;
+    border-radius: 22px;
     background-color: white;
     box-shadow: 0px 4px 3px 2px var(--gris);
 }
@@ -289,7 +294,7 @@ article {
     display: flex;
     flex-direction: column;
     height: 200px;
-    border-radius: 18px;
+    border-radius: 22px;
     padding: 5px;
 }
 .linkLodging img {
@@ -494,15 +499,20 @@ article {
 @media (min-width: 1024px) {
     body { 
         max-width: 1480px;
+        position: relative;
     }
     h3 {
         margin: 20px 0px 0px;
     }
+    .subscribe{
+        position: relative;
+        top: 2.5px;
+    }
     .category {
-        width: 30%;
+        width: 25%;
         position: absolute;
         top: 0px;
-        right: 12%;
+        right: 13%;
     }
     .lodging a ,.activity a {
         display: block;
@@ -629,6 +639,7 @@ article {
 /*---------Desktop Wide-----------*/
 @media (min-width: 1480px) {
     body{
-        max-width: 100%;
+        max-width: 2000px;
+        margin: auto;
     }
 }
