@@ -43,6 +43,10 @@ article {
 }
 .sectionPopular, .mainFooter{
     background-color: var(--gris);
+    border-radius: 18px;
+    background: linear-gradient(145deg, #ffffff, #dadada);
+    box-shadow:  5px 5px 10px #b8b8b8,
+                -5px -5px 10px #ffffff;
 }
 
 .margVertical {
@@ -445,8 +449,10 @@ article {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        background-color: var(--gris);
-        border-radius: 15px;
+        border-radius: 18px;
+        background: linear-gradient(145deg, #ffffff, #dadada);
+        box-shadow:  5px 5px 10px #b8b8b8,
+                    -5px -5px 10px #ffffff;
         padding: 20px;
         justify-content: center;
         text-align: center;
