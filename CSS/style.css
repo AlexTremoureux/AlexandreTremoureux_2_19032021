@@ -17,16 +17,16 @@ ul {
 }
 a {
     text-decoration: none;
-    color: rgb(20, 20, 20);
-}
-span {
-    font-weight: bold;
+    color: #141414;
 }
 body {
     font-family: 'Raleway', sans-serif;
-    color: rgb(20, 20, 20);
+    color: #141414;
     font-size: 1rem;
     max-width: 768px;
+}
+span {
+    font-weight: bold;
 }
 img {
     max-width: 100%;
@@ -63,10 +63,9 @@ article {
     justify-content: space-between;
 }
 .subscribe {
-    display: block;
     font-weight: bold;
     font-size: 1.1rem;
-    background-color: white;
+    background-color: #ffffff;
     border: none;
     cursor: pointer;
 }
@@ -75,17 +74,15 @@ article {
     display: flex;
     text-align: center;
     width: 100%;
-    height: 30px;
-    margin-bottom: 20px;
 }
 .lodging , .activity {
     width: 50%;
 }
 .lodging a ,.activity a {
     display: block;
+    padding-bottom: 10px;
     border-bottom: solid var(--gris);
     font-size: 1.1rem;
-    padding-bottom: 10px;
 }
 .lodging a:hover, .activity a:hover {
     color: var(--bleu);
@@ -112,7 +109,6 @@ article {
 }
 .iSearch {
     height: 50px;
-    max-width: 100%;
     width: 100%;
     border-top: solid var(--gris);
     border-bottom: solid var(--gris);
@@ -123,20 +119,21 @@ article {
     font-weight: bold;
 }
 .iSearch::placeholder{
-    opacity: 90%;
+    opacity: 80%;
+    padding-left: 15px;
 }
 .iSearch:focus{
     outline-offset: -1px;
     outline-color: var(--bleu);
-    outline-style: ridge;
+    outline-style: solid;
 }
 .wrapperIconSearch{
     position: relative;
-    right: 15px;
+    right:12px;
     display: flex;
     justify-content: center;
     background-color: var(--bleu);
-    color: white;
+    color: #ffffff;
     height: 50px;
     min-width: 50px;
     font-size: 1.2rem;
@@ -153,7 +150,7 @@ article {
     display: flex;
     justify-content: center;
     background-color: var(--bleu);
-    color: white;
+    color: #ffffff;
     height: 50px;
     padding: 0px 20px;
     border-radius: 0px 15px 15px 0px;
@@ -173,7 +170,7 @@ article {
     align-items: center;
     background-color: white;
     height: 55px;
-    border: solid 2px rgb(217, 217, 217);
+    border: solid 2px #d9d9d9;
     border-radius: 25px;
     margin: 0px 15px 15px 0px;
     cursor: pointer;
@@ -248,23 +245,21 @@ article {
     font-size: 1.2rem;
     margin-left: 20px;
 }
-.articlePopular {
-    max-width: 100%;
+.articlePopular{
     border-radius: 22px;
-    box-shadow: 0px 0px 8px 2px rgb(230, 230, 230);
-    background-color: rgb(255, 255, 255);
 }
 .linkPopular {
-    max-width: 100%;
-    max-height: 155px;
-    border-radius: 22px;
     display: flex;
+    width: 100%;
+    max-height: 155px;
     padding: 5px;
+    border-radius: 22px;
+    box-shadow: 0px 0px 8px 2px rgb(230, 230, 230);
+    background-color: #ffffff;
 }
 .linkPopular img {
     width: 40%;
     height: 145px;
-    max-height: 150px;
     border-radius: 18px 0px 0px 18px;
     object-fit: cover;
 }
@@ -272,23 +267,32 @@ article {
     max-width: 60%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     padding-left: 15px;
 }
-.linkPopular h4 {
-    font-size: 1.1rem;
-}
-.linkPopular p {
+.wrapperDescriptionPopular h4 {
     font-size: 1rem;
+    flex: 1;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 10px;
 }
-.linkPopular div {
+.wrapperDescriptionPopular p {
     font-size: 0.9rem;
+    flex: 1;
+    margin-top: 5px;
+}
+.wrapperDescriptionPopular div {
+    font-size: 0.9rem;
+    flex: 1;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    margin-bottom: 5px;
 }
 /*------Section Lodging--------*/
 .articleLodging {
     border-radius: 22px;
-    background-color: white;
-    box-shadow: 0px 4px 3px 2px var(--gris);
 }
 .linkLodging {
     display: flex;
@@ -296,6 +300,8 @@ article {
     height: 200px;
     border-radius: 22px;
     padding: 5px;
+    background-color: white;
+    box-shadow: 0px 4px 3px 2px var(--gris);
 }
 .linkLodging img {
     height: 60%;
@@ -306,24 +312,29 @@ article {
     height: 40%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     padding-left: 15px;
 }
-.linkLodging h4{
-    font-size: 1.1rem;
-}
-.linkLodging p{
+.wrapperDescriptionLodging h4{
     font-size: 1rem;
+    height: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
-.linkLodging div{
+.wrapperDescriptionLodging p{
     font-size: 0.9rem;
+    height: 30%;
+    width: 100%;
+}
+.wrapperDescriptionLodging div{
+    font-size: 0.9rem;
+    
 }
 .more {
     font-weight: bold;
     font-size: 1.2rem;
     display: block;
     padding: 20px 0px;
-    width: max-content;
 }
 /*-------Section Activity-------*/
 .articleActivity, .linkActivity, .linkActivity img {
@@ -331,9 +342,6 @@ article {
 }
 .articleActivity {
     border-radius: 18px;
-    background-color: white;
-    box-shadow: 0px 4px 12px 4px var(--gris);
-    margin: 20px 0px;
 }
 .linkActivity {
     height: 190px;
@@ -342,6 +350,9 @@ article {
     justify-content: space-between;
     border-radius: 18px;
     padding-bottom: 5px;
+    background-color: white;
+    box-shadow: 0px 4px 12px 4px var(--gris);
+    margin: 20px 0px;
 }
 .linkActivity img {
     height: 135px;
@@ -363,26 +374,23 @@ article {
 }
 /*------------------------------media-queries----------------------------------*/
 /*---------Tablet-----------*/
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     body{
         max-width: 1024px;
     }
     .headerTitle, .search{
         text-align: center;
     }
-    .searchBar{
+    .searchBar, .filter, .result{
         justify-content: center;
     }
     .iSearch{
         width: 50%;
     }
-    .filter, .result{
-        justify-content: center;
-    }
     .mainContent{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         width: 90%;
         height: 100%;
         padding: 20px 0px;
@@ -395,7 +403,6 @@ article {
     .sectionPopular{
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
         padding: 20px;
         border-radius: 15px;
         margin-bottom: 30px;
@@ -403,6 +410,7 @@ article {
     .titleSectionPopular{
         display: block;
         width: 100%;
+        text-align: center;
         margin: 10px 0px 0px;
     }
     .popularContent{
@@ -414,11 +422,19 @@ article {
         height: 250px;
         margin: 0px;
         padding: 0px;
-        text-align: center;
     }
     .articlePopular{
         width: 32%;
-        height: max-content;
+    }
+    .linkPopular h4 {
+        display: flex;
+        height: 50%;
+        align-items: center;
+        font-size: 1rem; 
+    }
+    .linkPopular p{
+        height: 30%;
+        width: 85%;
     }
     /*---------Tablet Lodging-----------*/
     .sectionLodging{
@@ -431,6 +447,9 @@ article {
         padding: 20px;
         justify-content: center;
         text-align: center;
+    }
+    .sectionLodging h3 , .more{
+        width: 50%;
     }
     .sectionLodging h3{
         margin: 10px 0px 20px;
@@ -446,8 +465,8 @@ article {
         margin: 5px;
         box-shadow: 0px 3px 12px 6px rgb(230, 230, 230);
     }
-    .more{
-        padding: 10px 0px 0px 10px;
+    .wrapperDescriptionLodging h4{
+        justify-content: center;
     }
     /*---------Tablet Activity-----------*/
     .sectionActivity{
@@ -462,15 +481,19 @@ article {
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
-        height: 460px;
+        height: 440px;
     }
     .articleActivity{
-        width: 22.8%;
-        max-height: 420px;
+        width: 22%;
+    }
+    .linkActivity {
+        margin: 0px;
     }
     .linkActivity h4{
         height: 60px;
-        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .littleLink{
         height: 180px;
@@ -480,10 +503,10 @@ article {
         object-position: 50% 20%;
     }
     .mediumLink{
-        height: 200px;
+        height: 210px;
     }
     .mediumImage{
-        min-height: 140px;
+        min-height: 150px;
     }
     .bigLink{
         height: 420px;
@@ -496,7 +519,7 @@ article {
     }
 }
 /*---------Desktop-----------*/
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
     body { 
         max-width: 1480px;
         position: relative;
@@ -563,18 +586,16 @@ article {
         display: flex;
         flex-direction: row-reverse;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
         width: 90%;
         padding: 20px 0px;
         margin: auto;
     }
     .popularWrapper {
         width: 30%;
-        height: min-content;
     }
     .titleSectionPopular {
         display: flex;
-        height: min-content;
         margin-bottom: 10px;
     }
     .sectionPopular {
@@ -592,40 +613,30 @@ article {
     .articlePopular {
         width: 100%;
     }
+    .linkPopular p{
+        width: 100%;
+    }
     .sectionLodging {
         max-width: 68%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
         text-align: left;
         justify-content: left;
         height: 620px;
-        background-color: var(--gris);
-        border-radius: 15px;
-        padding: 20px;
-        margin: 0px 10px 0px 0px;
-    }
-    .sectionLodging h3 , .more{
-        width: 50%;
+        margin: 0px;
     }
     .sectionLodging h3{
-        margin: 10px  0px 0px;
-    }
-    .articleWrapper {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 100%;
+        margin: 10px 0px 0px;
     }
     .articleLodging {
-        margin-bottom: 20px;
+        height: max-content;
     }
-    .more {
-        padding: 10px 0px 0px 10px;
+    .wrapperDescriptionLodging h4{
+        justify-content: left;
     }
     .sectionActivity{
         text-align: left;
+    }
+    .linkActivity h4{
+        justify-content: left;
     }
     .footerContent {
         display: flex;
@@ -637,7 +648,7 @@ article {
     }
 }
 /*---------Desktop Wide-----------*/
-@media (min-width: 1480px) {
+@media screen and (min-width: 1480px) {
     body{
         max-width: 2000px;
         margin: auto;
