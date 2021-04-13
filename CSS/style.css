@@ -1,7 +1,7 @@
 /* style.css---------------
 Par Alexandre TREMOUREUX-*/
 :root {
-    --bleu: #0065FC;
+    --bleu: #0065fc;
     --bleuClair: #DEEBFF;
     --gris: #F2F2F2;
     box-sizing: border-box;
@@ -246,21 +246,16 @@ article {
     max-width: 100%;
     min-height: 145px;
     max-height: 190px;
-    border-radius: 22px;
-    border-right: solid #b9b8b8 1px;
-    border-bottom: solid #b9b8b8 1px;
-    box-shadow: 2px 2px 10px 2px #b9b8b8;
-    background-color: #ffffff;
-}
-.articlePopular:hover{
-    transition: 0.2s;
-    transform: scale(1.2);
+    border-radius: 18px;
+    background: linear-gradient(145deg, #ffffff, #dadada);
+    box-shadow:  5px 5px 10px #b8b8b8,
+                -5px -5px 10px #ffffff;
 }
 .articlePopular:active{
-    border: none;
-    border-top: solid #b9b8b8 1px;
-    border-left: solid #b9b8b8 1px;
-    box-shadow: -2px -2px 10px 2px #b9b8b8;
+    border-radius: 18px;
+    background: #F2F2F2;
+    box-shadow: inset 5px 5px 10px #b8b8b8,
+                inset -5px -5px 10px #ffffff;
 }
 .linkPopular {
     max-width: 100%;
@@ -305,26 +300,27 @@ article {
     height: 210px;
     width: 100%;
     border-radius: 18px;
-    background-color: white;
-    border-right: solid #b9b8b8 1px;
-    border-bottom: solid #b9b8b8 1px;
-    box-shadow: 2px 2px 10px 2px #b9b8b8;
-    background-color: #ffffff;
+    background: linear-gradient(145deg, #ffffff, #dadada);
+    box-shadow:  5px 5px 10px #b8b8b8,
+                -5px -5px 10px #ffffff;
 }
 .articleLodging:active{
-    border: none;
-    border-top: solid #b9b8b8 1px;
-    border-left: solid #b9b8b8 1px;
-    box-shadow: -2px -2px 10px 2px #b9b8b8;
+    border-radius: 18px;
+    background: #F2F2F2;
+    box-shadow: inset 5px 5px 10px #b8b8b8,
+                inset -5px -5px 10px #ffffff;
 }
-.articleLodging:hover{
-    transition: 0.2s;
-    transform: scale(1.2);
+.articleActivity:active{
+    border-radius: 18px;
+    background: #F2F2F2;
+    box-shadow: inset 5px 5px 10px #b8b8b8,
+                inset -5px -5px 10px #ffffff;
 }
 .linkLodging {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 5px;
     height: 100%;
     border-radius: 18px;
 }
@@ -354,10 +350,12 @@ article {
 }
 .articleActivity {
     border-radius: 18px;
-    background-color: white;
-    box-shadow: 0px 3px 8px 4px #b9b8b8;
+    background: linear-gradient(145deg, #ffffff, #dadada);
+    box-shadow:  5px 5px 10px #b8b8b8,
+                -5px -5px 10px #ffffff;
     margin: 20px 0px;
 }
+
 .linkActivity {
     height: 190px;
     display: flex;
