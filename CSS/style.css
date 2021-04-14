@@ -121,6 +121,7 @@ article {
 .iSearch::placeholder{
     opacity: 80%;
     padding-left: 15px;
+    appearance: none;
 }
 .iSearch:focus{
     outline-offset: -1px;
