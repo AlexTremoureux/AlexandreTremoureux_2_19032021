@@ -17,26 +17,25 @@ ul {
 }
 a {
     text-decoration: none;
-    color: rgb(20, 20, 20);
-}
-span {
-    font-weight: bold;
+    color: #141414;
 }
 body {
     font-family: 'Raleway', sans-serif;
-    color: rgb(20, 20, 20);
+    color: #141414;
     font-size: 1rem;
-    width: 100%;
     max-width: 768px;
+}
+span {
+    font-weight: bold;
 }
 img {
     max-width: 100%;
     height: auto;
 }
 h3 {
-    font-size: 1.4em;
+    font-size: 1.3rem;
     font-weight: bold;
-    margin: 30px 0px 20px;
+    margin: 10px 0px 20px;
 }
 article {
     margin: 10px 0px;
@@ -48,7 +47,6 @@ article {
     box-shadow:  5px 5px 10px #b8b8b8,
                 -5px -5px 10px #ffffff;
 }
-
 .margVertical {
     margin: 10px 0px;
 }
@@ -70,7 +68,8 @@ article {
 }
 .subscribe {
     font-weight: bold;
-    background-color: white;
+    font-size: 1.1rem;
+    background-color: #ffffff;
     border: none;
     cursor: pointer;
 }
@@ -79,16 +78,15 @@ article {
     display: flex;
     text-align: center;
     width: 100%;
-    height: 30px;
-    margin-bottom: 20px;
 }
 .lodging , .activity {
     width: 50%;
 }
 .lodging a ,.activity a {
     display: block;
-    border-bottom: solid var(--gris);
     padding-bottom: 10px;
+    border-bottom: solid var(--gris);
+    font-size: 1.1rem;
 }
 .lodging a:hover, .activity a:hover {
     color: var(--bleu);
@@ -99,6 +97,7 @@ article {
     display: flex;
     height: 50px;
     max-width: 100%;
+    margin-bottom: 20px;
 }
 .wrapperIconMap{
     display: flex;
@@ -107,38 +106,44 @@ article {
     border-radius: 20px 0px 0px 20px;
     height: 50px;
     min-width: 60px;
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 .iconMap{
    align-self: center;
 }
 .iSearch {
     height: 50px;
-    max-width: 100%;
     width: 100%;
     border-top: solid var(--gris);
     border-bottom: solid var(--gris);
     border-left: none;
     border-right: none;
     padding-left: 15px;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: bold;
 }
+/*------désactivation de la croix--------*/
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
 .iSearch::placeholder{
-    opacity: 90%;
+    opacity: 80%;
+    padding-left: 15px;
 }
 .iSearch:focus{
     outline-offset: -1px;
     outline-color: var(--bleu);
-    outline-style: ridge;
+    outline-style: solid;
 }
 .wrapperIconSearch{
     position: relative;
-    right: 15px;
+    right:12px;
     display: flex;
     justify-content: center;
     background-color: var(--bleu);
-    color: white;
+    color: #ffffff;
     height: 50px;
     min-width: 50px;
     font-size: 1.2rem;
@@ -155,7 +160,7 @@ article {
     display: flex;
     justify-content: center;
     background-color: var(--bleu);
-    color: white;
+    color: #ffffff;
     height: 50px;
     padding: 0px 20px;
     border-radius: 0px 15px 15px 0px;
@@ -175,7 +180,7 @@ article {
     align-items: center;
     background-color: white;
     height: 55px;
-    border: solid 2px rgb(217, 217, 217);
+    border: solid 2px #d9d9d9;
     border-radius: 25px;
     margin: 0px 15px 15px 0px;
     cursor: pointer;
@@ -188,7 +193,7 @@ article {
     width: 55px;
     background-color: var(--bleuClair);
     border-radius: 50%;
-    font-size: 1.4em;
+    font-size: 1.4rem;
     left: -5px;
 }
 .icon{
@@ -197,7 +202,7 @@ article {
 .titleFilter {
     padding-right: 15px;
     padding-left: 60px;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     font-weight: bold;
 }
 .buttonGroup:hover {
@@ -206,8 +211,12 @@ article {
     color: var(--bleu);
     transition: 0.4s;
 }
-.buttonGroup:hover .iconWrapperFilter, .buttonGroup:hover i{
+.buttonGroup:hover .iconWrapperFilter{
     background-color: var(--bleu);
+    color: var(--bleuClair);
+    transition: 0.4s;
+}
+.buttonGroup:hover i{
     color: var(--bleuClair);
     transition: 0.4s;
 }
@@ -239,11 +248,11 @@ article {
 .titleSectionPopular {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 10px;
+    margin: 10px 0px 10px;
 }
 .iconPopular{
     cursor: pointer;
-    font-size: 1em;
+    font-size: 1.2rem;
     margin-left: 20px;
 }
 .articlePopular {
@@ -262,44 +271,48 @@ article {
                 inset -5px -5px 10px #ffffff;
 }
 .linkPopular {
-    max-width: 100%;
-    min-height: 145px;
-    max-height: 155px;
-    border-radius: 22px;
     display: flex;
+    width: 100%;
+    max-height: 155px;
     padding: 5px;
+    border-radius: 22px;
+    box-shadow: 0px 0px 8px 2px rgb(230, 230, 230);
+    background-color: #ffffff;
 }
 .linkPopular img {
     width: 40%;
     height: 145px;
-    max-height: 150px;
     border-radius: 18px 0px 0px 18px;
     object-fit: cover;
-    
 }
 .wrapperDescriptionPopular{
     max-width: 60%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     padding-left: 15px;
 }
-.linkPopular h4 {
-    
-    font-size: 1.1em;
+.wrapperDescriptionPopular h4 {
+    font-size: 1rem;
+    flex: 1;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 10px;
 }
-.linkPopular p {
-    
-    font-size: 1em;
+.wrapperDescriptionPopular p {
+    font-size: 0.9rem;
+    flex: 1;
+    margin-top: 5px;
 }
-.linkPopular div {
-    
-    font-size: 0.9em;
+.wrapperDescriptionPopular div {
+    font-size: 0.9rem;
+    flex: 1;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    margin-bottom: 5px;
 }
 /*------Section Lodging--------*/
-.articleLodging, .linkLodging, .linkLodging h4 {
-    max-width: 100%;
-}
 .articleLodging {
     height: 210px;
     width: 100%;
@@ -323,30 +336,44 @@ article {
 .linkLodging {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    height: 200px;
+    border-radius: 22px;
     padding: 5px;
-    height: 100%;
-    border-radius: 18px;
+    background-color: white;
+    box-shadow: 0px 4px 3px 2px var(--gris);
 }
 .linkLodging img {
     height: 60%;
     border-radius: 18px 18px 0px 0px;
     object-fit: cover;
 }
-.linkLodging h4, .linkLodging p{
-    margin: 5px 10px 0px;
-    font-size: 1em;
+.wrapperDescriptionLodging{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
 }
-.linkLodging div{
-    font-size: 0.9em;
-    margin: 5px 10px;
+.wrapperDescriptionLodging h4{
+    font-size: 1rem;
+    height: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.wrapperDescriptionLodging p{
+    font-size: 0.9rem;
+    height: 30%;
+    width: 100%;
+}
+.wrapperDescriptionLodging div{
+    font-size: 0.9rem;
+    
 }
 .more {
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     display: block;
     padding: 20px 0px;
-    width: max-content;
 }
 /*-------Section Activity-------*/
 .articleActivity, .linkActivity, .linkActivity img {
@@ -364,7 +391,12 @@ article {
     height: 190px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     border-radius: 18px;
+    padding-bottom: 5px;
+    background-color: white;
+    box-shadow: 0px 4px 12px 4px var(--gris);
+    margin: 20px 0px;
 }
 .linkActivity img {
     height: 135px;
@@ -372,8 +404,8 @@ article {
     object-fit: cover;
 }
 .linkActivity h4 {
-    padding: 20px 20px 10px 20px;
-    font-size: 1em;
+    padding: 10px 20px;
+    font-size: 1rem;
 }
 /*----------Footer----------*/
 .footerContent {
@@ -381,44 +413,40 @@ article {
     flex-direction: column;
 }
 .footerContent h4 {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     margin: 25px 0px;
 }
-/*-------------------------------------------------------------media-queries------------------------------------------------------------------------*/
-/*------------------------------Tablet------------------------------------*/
-@media (min-width: 768px) {
+/*------------------------------media-queries----------------------------------*/
+/*---------Tablet-----------*/
+@media screen and (min-width: 768px) {
     body{
         max-width: 1024px;
     }
     .headerTitle, .search{
         text-align: center;
     }
-    .searchBar{
+    .searchBar, .filter, .result{
         justify-content: center;
     }
     .iSearch{
         width: 50%;
     }
-    .filter, .result{
-        justify-content: center;
-    }
     .mainContent{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         width: 90%;
         height: 100%;
-        padding: 20px 0pxs;
+        padding: 20px 0px;
         margin: auto;
     }
-    /*------------------------------section Popular Tablet------------------------------------*/
+    /*---------Tablet Popular-----------*/
     .popularWrapper{
         width: 100%;
     }
     .sectionPopular{
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
         padding: 20px;
         border-radius: 15px;
         margin-bottom: 30px;
@@ -426,6 +454,7 @@ article {
     .titleSectionPopular{
         display: block;
         width: 100%;
+        text-align: center;
         margin: 10px 0px 0px;
     }
     .popularContent{
@@ -437,13 +466,22 @@ article {
         height: 250px;
         margin: 0px;
         padding: 0px;
-        text-align: center;
     }
     .articlePopular{
         width: 32%;
-        height: max-content;
     }
     /*------------------------------section Lodging Tablet------------------------------------*/
+    .linkPopular h4 {
+        display: flex;
+        height: 50%;
+        align-items: center;
+        font-size: 1rem; 
+    }
+    .linkPopular p{
+        height: 30%;
+        width: 85%;
+    }
+    /*---------Tablet Lodging-----------*/
     .sectionLodging{
         width: 100%;
         display: flex;
@@ -457,28 +495,33 @@ article {
         justify-content: center;
         text-align: center;
     }
+    .sectionLodging h3 , .more{
+        width: 50%;
+    }
     .sectionLodging h3{
-        margin: 0px 0px 30px;
+        margin: 10px 0px 20px;
     }
     .articleWrapper{
+        width: 100%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
+        align-content: space-between;
     }
     .articleLodging{
         width: 30%;
         margin: 5px;
         
     }
-    .more{
-        padding: 10px 0px 0px 10px;
+    .wrapperDescriptionLodging h4{
+        justify-content: center;
     }
-    /*------------------------------section Activity Tablet------------------------------------*/
+    /*---------Tablet Activity-----------*/
     .sectionActivity{
         width: 100%;
         padding: 0px;
-        margin: 0px;
+        margin: 10px 0px;
         text-align: center;
     }
     .activityWrapper{
@@ -486,53 +529,64 @@ article {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        height: 550px;
+        justify-content: space-between;
+        align-content: space-between;
+        height: 440px;
     }
     .articleActivity{
-        width: 22.8%;
-        max-height: 420px;
-        margin-right: 20px;
+        width: 24%;
+    }
+    .linkActivity {
+        margin: 0px;
     }
     .linkActivity h4{
-        padding-top: 10px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .big{
-        
-        min-height: 420px;
+    .littleLink{
+        height: 180px;
+    }
+    .littleImage{
+        max-height: 120px;
+        object-position: 50% 20%;
+    }
+    .mediumLink{
+        height: 210px;
+    }
+    .mediumImage{
+        min-height: 150px;
     }
     .bigLink{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100%;
         height: 420px;
     }
     .bigImage{
-        min-height: 365px;
-        width: 100%;
+        min-height: 360px;
     }
     /*------------------------------Footer Tablet------------------------------------*/
     .footerContent{
         text-align: center;
     }
 }
-/*------------------------------desktop------------------------------------*/
-@media (min-width: 1024px) {
+/*---------Desktop-----------*/
+@media screen and (min-width: 1024px) {
     body { 
         max-width: 1480px;
+        position: relative;
     }
     h3 {
-        font-size: 1.2em;
         margin: 20px 0px 0px;
     }
-    .suscribe{
-        width: 12%;
+    .subscribe{
+        position: relative;
+        top: 2.5px;
     }
     .category {
-        width: 30%;
+        width: 25%;
         position: absolute;
         top: 0px;
-        right: 12%;
+        right: 13%;
     }
     .lodging a ,.activity a {
         display: block;
@@ -573,16 +627,17 @@ article {
         flex-direction: row;
         flex-wrap: wrap;
         margin-top: 20px;
+        max-width: 100%;
+        max-width: 100%;
     }
     .filterMainTitle {
         margin-right: 40px;
     }
-    
     .mainContent {
         display: flex;
         flex-direction: row-reverse;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
         width: 90%;
         padding: 20px 0px;
         margin: auto;
@@ -590,11 +645,10 @@ article {
 
     .popularWrapper {
         width: 30%;
-        height: min-content;
     }
     .titleSectionPopular {
         display: flex;
-        height: min-content;
+        margin-bottom: 10px;
     }
     .sectionPopular {
         padding: 20px;
@@ -611,49 +665,44 @@ article {
     .articlePopular {
         width: 100%;
     }
+    .linkPopular p{
+        width: 100%;
+    }
     .sectionLodging {
         max-width: 68%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
         text-align: left;
         justify-content: left;
         height: 620px;
-        background-color: var(--gris);
-        border-radius: 15px;
-        padding: 20px;
-        margin: 0px 10px 0px 0px;
+        margin: 0px;
     }
-    .sectionLodging h3 , .more{
-        width: 50%;
-    }
-    .articleWrapper {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        min-width: 30%;
+    .sectionLodging h3{
+        margin: 10px 0px 0px;
     }
     .articleLodging {
-        margin-bottom: 20px;
+        height: max-content;
     }
-    .more {
-        padding: 10px 0px 0px 10px;
+    .wrapperDescriptionLodging h4{
+        justify-content: left;
+    }
+    .sectionActivity{
+        text-align: left;
+    }
+    .linkActivity h4{
+        justify-content: left;
     }
     .footerContent {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding-bottom: 40px;
-    }
-    .sectionHelp {
-        margin-right: 200px;
+        padding-right: 20%;
+        text-align: left
     }
 }
-/*------------------------------Desktop wide------------------------------------*/
-@media (min-width: 1480px) {
+/*---------Desktop Wide-----------*/
+@media screen and (min-width: 1480px) {
     body{
-        max-width: 100%;
+        max-width: 2000px;
+        margin: auto;
     }
-    
 }
