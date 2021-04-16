@@ -403,10 +403,8 @@ article {
         margin: auto;
     }
     /*---------Tablet Popular-----------*/
-    .popularWrapper{
-        width: 100%;
-    }
     .sectionPopular{
+        width: 100%;
         display: flex;
         flex-direction: column;
         padding: 20px;
@@ -600,16 +598,14 @@ article {
         padding: 20px 0px;
         margin: auto;
     }
-    .popularWrapper {
+    .sectionPopular {
         width: 30%;
+        padding: 20px;
+        border-radius: 15px;
     }
     .titleSectionPopular {
         display: flex;
         margin-bottom: 10px;
-    }
-    .sectionPopular {
-        padding: 20px;
-        border-radius: 15px;
     }
     .popularContent {
         flex-direction: column;
